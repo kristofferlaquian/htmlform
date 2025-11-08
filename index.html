@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Information Form - Kristoffer Laquian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <h2>User Information :</h2>
+
+
+    <input type="hidden" name="access_key" value="4305a657-0835-457e-8c00-a1864f872293">
+
+    <label for="fn">First Name:</label>
+    <input id="Fn" type="text" name="name" required>
+
+    <label for="Ln">Last Name:</label>
+    <input id="Ln" type="text" name="name" required>
+
+    <label for="Mail">Email:</label>
+    <input id="Mail" type="email" name="email" required>
+
+    <label for="cphone">Phone Number:</label>
+    <input type="tel" id="cphone" name="phone" required>
+
+    <label for="bday">Date of Birth:</label>
+    <input type="Date" id="bday" name="birthday" required>
+
+    <label for="Notes">Leave a Note!</label>
+    <textarea id="Notes" name="message"></textarea>
+
+    <div class="h-captcha" data-captcha="true"></div>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <button type="submit">Submit Form</button>
+  </form>
+
+</body>
+
+</html>
